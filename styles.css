@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem
+}
+
+.sentenceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sentence {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  height: 80vh;
+  white-space: pre;
+  overflow: hidden;
+}
+
+#first {
+  margin: 0 0 0 20rem;
+}
+
+#highlight {
+  background-color: rgba(1,1,1,.2)
+}
+
+.right {
+  color: rgb(0, 223, 0);
+}
+
+.wrong {
+  color: red;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
