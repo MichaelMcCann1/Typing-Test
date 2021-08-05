@@ -2,7 +2,7 @@
 
 This is a speed typing test I created with vanilla JavaScript. The test begins calculating your typing speed as soon as you press a key on your keyboard. The app will keep track of you Gross Words Per Minute and your typing accuracy. More info on these metrics can be found on this article from [SpeedTypingOnline](https://www.speedtypingonline.com/typing-equations). This app is fully responsive and can work on any screen size.
 
-<img src="https://github.com/MichaelMcCann1/Typing-Test/blob/refactor/TypingTestScreenshot.png" width="500" height="400">
+<img src="https://github.com/MichaelMcCann1/Typing-Test/blob/main/TypingTestScreenshot.png" width="500" height="400">
 
 The letter that is shaded gray is the current letter that needs to be typed to move on. You cannot move on to the next letter until you type the current letter correctly. If the user typed a letter correctly on their first try the letter will turn green. If it took them more than one attempt to type the correct letter the letter will turn a red color. The stats will update every time a key is pressed by the user.  
 
