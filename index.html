@@ -3,35 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <meta name="description" content="Speed typing test. See how many Words Per Minute you can type.">
+  <title>Speed Typing Test</title>
   <link rel="stylesheet" href="styles.css">
   <script src='app.js' defer></script>
 </head>
 <body>
   <div class="sentenceContainer">
     <div class="sentence">
-      <p id="first"></p>
-      <span id="highlight">T</span>
-      <p id="second">he story goes that some time ago, a man punished his 3 year old daughter for wasting a roll of gold wrapping paper. Money was tight and he became infuriated when the child tried to decorate a box to put under the Christmas tree. Nevertheless, the little girl brought the gift to her father the next morning and said, This is for you, Daddy.</p>
+      <p id="completedLeters"></p>
+      <span id="currentLetter"></span>
+      <p id="remainingLetters"></p>
     </div>
   </div>
   <div class="statsContainer">
     <div class="stats">
-      <div class="grossWPM">
+      <div class="Gross">
         <p>Gross WPM</p>
-        <p id="grossScore">0</p>
+        <p id="grossWPM">0</p>
       </div>
-      <!--
-      <div class="netWPM">
-        <p>Net WPM</p>
-        <p>0</p>
-      </div>-->
       <div class="Accuracy">
         <p>Accuray</p>
-        <p id="accPercent">0%</p>
+        <p id="accuracyPercentage">0%</p>
       </div>
     </div>
   </div>
-  
 </body>
 </html>
