@@ -17,16 +17,16 @@
   display: flex;
   align-items: center;
   width: 75vw;
-  height: 80vh;
+  height: 70vh;
   white-space: pre;
   overflow: hidden;
 }
 
-#first {
-  margin: 0 0 0 20rem;
+#completedLeters {
+  margin-left: 35%;
 }
 
-#highlight {
+#currentLetter {
   background-color: rgba(1,1,1,.2)
 }
 
@@ -41,16 +41,34 @@
 .stats {
   display: flex;
   justify-content: space-between;
-  width: 60vw;
 }
 
 .statsContainer {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  width: 60vw;
 }
 
 .stats div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+@media  screen and (max-width: 700px) {
+  * {
+    font-size: 1.1rem;
+  }
+
+  .sentence {
+    width: 90vw;
+  }
+
+  .statsContainer {
+    width: 75vw;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
