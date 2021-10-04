@@ -1,5 +1,7 @@
 # Typing-Test
 
+**Live Link to Project: https://mm-typingtest.web.app/**
+
 This is a speed typing test I created with vanilla JavaScript. The test begins calculating your typing speed as soon as you press a key on your keyboard. The app will keep track of you Gross Words Per Minute and your typing accuracy. More info on these metrics can be found on this article from [SpeedTypingOnline](https://www.speedtypingonline.com/typing-equations). This app is fully responsive and can work on any screen size.
 
 <img src="https://github.com/MichaelMcCann1/Typing-Test/blob/main/TypingTestScreenshot.png" width="500" height="400">
