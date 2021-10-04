@@ -6,6 +6,27 @@
   font-size: 1.5rem
 }
 
+.githubLink {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.githubLink > img {
+  opacity: 0.3;
+  width: 30px;
+  height: 30px;
+  transition: all .5s ease;
+}
+
+.githubLink:hover > img {
+  opacity: 1;
+}
+
+body {
+  background-color: rgb(240,240,240);
+}
+
 .sentenceContainer {
   display: flex;
   justify-content: center;
@@ -31,11 +52,11 @@
 }
 
 .right {
-  color: rgb(0, 223, 0);
+  color: rgb(0, 177, 0);
 }
 
 .wrong {
-  color: red;
+  color: rgb(228, 1, 1);
 }
 
 .stats {
@@ -54,6 +75,22 @@
   align-items: center;
 }
 
+.tapScreen {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%,-50%);
+  width: 15em;
+  text-align: center;
+  font-weight: 700;
+  display: none;
+}
+
+.inputBox {
+  position: absolute;
+  top: -100px;
+}
+
 
 @media  screen and (max-width: 700px) {
   * {
@@ -70,5 +107,9 @@
     top: 15%;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .tapScreen {
+    display: block;
   }
 }
