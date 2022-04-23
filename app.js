@@ -18,9 +18,9 @@ let currentLetterCorrect = true;
 
 let margin = window.getComputedStyle(completedLeters)['margin-left']
 margin = parseInt(margin.substring(0, margin.length - 2))
-let fontWidth = window.getComputedStyle(completedLeters)['font-size'] === '36px'? 21.6 : 11.6
+const fontWidth = window.innerWidth > 700 ? 21.6 : 11.6
 
-let paragraph = 'The story goes that a man punished his daughter for wasting a roll of gold wrapping paper. Money was tight and he became infuriated when the child tried to decorate a box to put under the Christmas tree. Nevertheless, the little girl brought the gift to her father the next morning and said, "This is for you, Daddy."'
+const paragraph = 'The story goes that a man punished his daughter for wasting a roll of gold wrapping paper. Money was tight and he became infuriated when the child tried to decorate a box to put under the Christmas tree. Nevertheless, the little girl brought the gift to her father the next morning and said, "This is for you, Daddy."'
 currentLetter.textContent = paragraph[0]
 remainingLetters.textContent = paragraph.slice(1)
 
@@ -36,7 +36,7 @@ document.addEventListener('keypress', (event) => {
   AccurayCounterTotal++;
 
   if (event.key == currentLetter.textContent) { //if key is correct, move current letter to completedLetters. Then update remainingLetters
-    let letter = document.createElement('span');
+    const letter = document.createElement('span');
     letter.textContent = currentLetter.textContent;
     completedLeters.appendChild(letter)
     currentLetter.textContent = remainingLetters.textContent[0];
